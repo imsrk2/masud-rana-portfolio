@@ -56,9 +56,28 @@ src/
 
 ## 🌐 Deploy
 
-The `dist/` folder is a static site — deploy it to **Vercel**, **Netlify**,
+The `dist/` folder is a static site — deploy it to **Netlify**, **Vercel**,
 **GitHub Pages**, or **Cloudflare Pages** (build command `npm run build`,
 output dir `dist`).
+
+### Netlify (recommended in this repo)
+
+A `netlify.toml` is included so no manual settings are needed:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+**CLI:** `npm i -g netlify-cli` → `netlify login` → `netlify link` → `netlify deploy --prod`
+
+**Git:** connect the repo in the Netlify dashboard; settings are auto-detected.
 
 ---
 

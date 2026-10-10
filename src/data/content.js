@@ -8,10 +8,13 @@ export const profile = {
   tagline:
     'I design and deploy AI agents & automation pipelines that run your business while you sleep.',
   location: 'Available worldwide · Remote',
-  email: 'hello@masudrana.ai',
+  // Email can be shared publicly (matches the About/Contact pages of the fieldnotes).
+  email: 'iammasudofficial@gmail.com',
   resumeUrl: '#',
   socials: [
-    { label: 'GitHub', href: 'https://github.com/', handle: '@masudrana' },
+    // GitHub is the owner account for this repo — verified.
+    { label: 'GitHub', href: 'https://github.com/imsrk2', handle: '@imsrk2' },
+    // TODO: replace the domain-level links below with your actual profile URLs.
     { label: 'LinkedIn', href: 'https://linkedin.com/', handle: '/in/masudrana' },
     { label: 'X', href: 'https://x.com/', handle: '@masudrana' },
     { label: 'YouTube', href: 'https://youtube.com/', handle: '@masudrana' },
